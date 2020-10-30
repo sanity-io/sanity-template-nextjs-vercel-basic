@@ -1,0 +1,22 @@
+{
+  "name": "simple-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "npm run build:sanity && npm run build:web",
+    "build:web": "next build",
+    "start:web": "next start",
+    "build:sanity": "cd studio && npx sanity build ../public/studio -y && cd ..",
+    "start:sanity": "cd studio && sanity start",
+    "postinstall": "lerna bootstrap"
+  },
+  "dependencies": {
+    "next": "10.0.0",
+    "next-sanity": "^0.1.7",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-json-pretty": "^2.2.0",
+    "lerna": "^3.22.1"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sanity-template-vercel-basic",
+  "version": "1.0.0",
+  "description": "This is a barebones example of how to create a starter template for <a href=\"https://www.sanity.io/create?template=sanity-io/sanity-template-netlify-poc\">sanity.io/create</a>.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sanity-template build && cp .env.local.test build/.env.local && sanity-template watch --template-values template-values.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

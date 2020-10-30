@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "title": "Next.js Barebones Starter",
+  "description": "Minimal and barebones example of a starter for deployment on Vercel with Next.js",
+  "technologies": [
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "url": "https://vercel.com/"
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "url": "https://nextjs.org"
+    }
+  ],
+  "deployment": {
+    "provider": "vercel",
+    "studio": { "basePath": "/studio" },
+    "corsOrigins": [
+      {
+        "origin": "http://localhost:3000",
+        "allowCredentials": true
+      }
+    ]
+  }
+}
