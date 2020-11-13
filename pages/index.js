@@ -12,6 +12,7 @@ import {getClient} from '../utils/sanity'
       props: {
        data: {data}
       },
+      revalidate: 50
     }
   }
 
