@@ -1,13 +1,22 @@
 {
-  "name": "sanity-template-vercel-basic",
-  "version": "1.0.0",
-  "description": "This is a barebones example of how to create a starter template for <a href=\"https://www.sanity.io/create?template=sanity-io/sanity-template-netlify-poc\">sanity.io/create</a>.",
-  "main": "index.js",
+  "name": "simple-site",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "watch": "sanity-template build && cp .env.local.test build/.env.local && sanity-template watch --template-values template-values.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next",
+    "build": "npm run build:sanity && npm run build:web",
+    "build:web": "next build",
+    "start:web": "next start",
+    "build:sanity": "cd studio && npx sanity build ../public/studio -y && cd ..",
+    "start:sanity": "cd studio && sanity start",
+    "postinstall": "lerna bootstrap"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "dependencies": {
+    "next": "10.0.0",
+    "next-sanity": "^0.1.7",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-json-pretty": "^2.2.0",
+    "lerna": "^3.22.1"
+  }
 }

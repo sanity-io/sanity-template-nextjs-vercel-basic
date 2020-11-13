@@ -4,7 +4,7 @@
   "description": "Minimal and barebones example of a starter for deployment on Vercel with Next.js",
   "previewMedia": {
     "type": "image",
-    "src": "assets/frontend.png",
+    "src": ".sanity-template/assets/frontend.png",
     "alt": "Next.js frontend with Sanity data displaying"
   },
   "technologies": [
