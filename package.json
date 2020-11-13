@@ -8,7 +8,7 @@
     "build:web": "next build",
     "start:web": "next start",
     "build:sanity": "cd studio && npx sanity build ../public/studio -y && cd ..",
-    "start:sanity": "cd studio && sanity start",
+    "start:sanity": "cp .env.local ./studio/.env.development && cd studio && sanity start",
     "postinstall": "lerna bootstrap"
   },
   "dependencies": {
